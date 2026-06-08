@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color:white;">
+    <ul class="language">
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>C++</li>
+    </ul>    
+</body>
+<script>
+    // function addlanguage(langName){
+    //     const list=document.createElement('li');
+    //     list.innerHTML=langName;
+    //     document.querySelector('.language').appendChild(list);
+    // }
+    // addlanguage('C#');
+    // addlanguage('Go');
+    function addlanguage(langName){
+        const list=document.createElement('li');
+        list.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(list);
+    }
+    addlanguage('C#');
+    addlanguage('Go');
+    const secLanguage=document.querySelector("li:nth-child(2)");
+    const newli=document.createElement('li');
+    newli.textContent='Ruby';
+    secLanguage.replaceWith(newli);
+    const lastLanguage=document.querySelector("li:last-child");
+    lastLanguage.remove();
+</script>
+</html>

@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.canvas{
+    margin:50px;
+    padding:30px;
+    align-items: center;
+    text-align: center;
+}
+.color-options{
+    margin:50px;
+    padding:30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.btn-danger{
+    height:100px;
+    width:100px;
+}
+.btn-primary{
+    height:100px;
+    width:100px;
+}
+.btn-success{
+    height:100px;
+    width:100px;
+}
+.btn-warning{
+    height:100px;
+    width:100px;
+    color:white;
+}
+.btn-info{
+    height:100px;
+    width:100px;
+    color:white;
+}

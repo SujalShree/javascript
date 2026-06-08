@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Color Switching unlimited unless you want to stop big boy</h1>
+    <button id="start">Start the show</button>
+    <button id="stop">End it all</button>
+</body>
+<script>
+    const startBtn=document.getElementById('start');
+    const stopBtn=document.getElementById('stop');
+    let intervalId;
+    startBtn.addEventListener('click',()=>{
+        intervalId=setInterval(()=>{
+            const randomColor=`#${Math.floor(Math.random()*16777215).toString(16)}`;
+            document.body.style.backgroundColor=randomColor;
+        },500);
+    });
+    stopBtn.addEventListener('click',()=>{
+        clearInterval(intervalId);
+    });
+</script>
+</html>
