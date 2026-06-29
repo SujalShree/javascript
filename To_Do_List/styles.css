@@ -1,0 +1,28 @@
+.app-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    background-color: lightgray;
+    height:100%;
+    width:100%;
+}
+.heading-class{
+    border: 2px solid black;
+    height: 50px;
+    width: 400px;
+    text-align: center;
+    background-color: lightblue;
+    margin-top:10px;
+}
+#task-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 20px;
+}
+#newTask{
+    margin-top: 10px;
+}
