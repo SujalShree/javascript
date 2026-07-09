@@ -26,3 +26,8 @@
 #newTask{
     margin-top: 10px;
 }
+#task-list li {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
